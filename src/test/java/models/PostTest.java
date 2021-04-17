@@ -19,6 +19,13 @@ class PostTest {
 
     }
 
+
+    @Test
+    void PostInstantiatesWithContent_true() throws Exception {
+        Post post = new Post("Day 1: Intro");
+        assertEquals("Day 1: Intro", post.getContent());
+    }
+
     @AfterEach
     void tearDown() {
     }
